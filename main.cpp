@@ -193,7 +193,6 @@ int play(char board[SIZE][SIZE], int nbPlayer) {
     Cell houses[MAX_PLAYER][4];
     Player players[MAX_PLAYER][4];
     initGame(cells, houses, players);
-
    
     // for (int i=0; i<MAX_PLAYER; i++) {
     //     for (Cell house : houses[i]) {
@@ -213,7 +212,7 @@ int play(char board[SIZE][SIZE], int nbPlayer) {
     int turn = 0; // Player turn : 0, 1, 2 or 3
     while (!finished) {
         // string text1 =  "It's up to the player " + idToColor(turn) + " to play." + RESET;
-
+        system("cls");
         displayCurrent(board, players);
 
         cout << endl << ("It's up to player " + idToColor(turn)) << (turn + 1) << " to play." << RESET << endl;
