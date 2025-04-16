@@ -28,6 +28,11 @@ This project is a **Ludo Game** implemented in **C++** using **Object-Oriented P
 This image represents the **main path** of the Ludo board, consisting of **40 cells** arranged in a cross-shaped layout.
 
 ![Ludo Path](one.jpg)
+## Terminal Game Visualization
+
+This image represents the *GameVisualition*
+
+![Ludo Path](two.png)
 
 ---
 
