@@ -186,10 +186,7 @@ int play(char board[SIZE][SIZE], int nbPlayer) {
     Player players[MAX_PLAYER][4];
     initGame(cells, houses, players);
 
-    for (Cell cell : cells){
-        cout << cell.x << " " << cell.y << " " << cell.value << endl;
-    }
-
+   
     for (int i=0; i<MAX_PLAYER; i++) {
         for (Cell house : houses[i]) {
             cout << house.x << " " << house.y << " " << house.value << endl;
