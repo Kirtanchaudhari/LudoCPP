@@ -78,6 +78,14 @@ int main(){
         winner = play(board, players);
         cout << endl << idToColor(winner) << "Player " << winner + 1 << " wins :) !" << RESET << endl << endl;
     }
+    cout << "HOPE U ENJOYED THE GAME (_)"<<endl<<endl;
+                cout << "  #####    ###    ##     ## ########     #######  ##     ## ######## ########  \n";
+                cout << " ##   ##  ## ##   ###   ### ##          ##     ## ##     ## ##       ##     ## \n";
+                cout << "##       ##   ##  #### #### ##          ##     ## ##     ## ##       ##     ## \n";
+                cout << "##  #### #######  ## ### ## ######      ##     ## ##     ## ######   ########  \n";
+                cout << "##   ##  ##   ##  ##     ## ##          ##     ##  ##   ##  ##       ##   ##   \n";
+                cout << " ##   ## ##   ##  ##     ## ##          ##     ##   ## ##   ##       ##    ##  \n";
+                cout << "  #####  ##   ##  ##     ## ########     #######     ###    ######## ##     ## \n";
 
     return 0;
 }
@@ -187,12 +195,12 @@ int play(char board[SIZE][SIZE], int nbPlayer) {
     initGame(cells, houses, players);
 
    
-    for (int i=0; i<MAX_PLAYER; i++) {
-        for (Cell house : houses[i]) {
-            cout << house.x << " " << house.y << " " << house.value << endl;
-        }
-        cout << endl;
-    }
+    // for (int i=0; i<MAX_PLAYER; i++) {
+    //     for (Cell house : houses[i]) {
+    //         cout << house.x << " " << house.y << " " << house.value << endl;
+    //     }
+    //     cout << endl;
+    // }
 
    // for (int i=0; i<MAX_PLAYER; i++) {
      //   for (Player player : players[i]) {
