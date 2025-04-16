@@ -71,6 +71,37 @@ This image represents the *GameVisualition*
 - **User Feedback:** The game provides real-time feedback, including the current dice roll, the active player, and victory messages.
 
 ---
+##  Time Complexity of the Ludo Game
+
+### Per Turn Complexity – O(1)
+
+Each player's turn involves:
+
+- Rolling a die → constant time  
+- Selecting a token (1 of 4) → constant time  
+- Moving up to 6 steps (max die roll) → constant time  
+- Collision checks with other tokens (max 12 others) → constant time  
+
+All of these actions happen in constant time because the board size and number of players are fixed.
+
+---
+
+### Overall Game Complexity – O(T)
+
+The game runs in a loop until one player wins. The total number of turns T depends on:
+
+- Dice roll outcomes (luck/unluckiness)  
+- Player decisions  
+- Send-backs due to collisions  
+
+Since each turn is O(1), the full game runs in *O(T)*, where T is the total number of turns taken.
+
+---
+
+### Board Setup & Initialization – O(1)
+
+Functions like initBoard() and initGame() initialize fixed-size arrays.  
+This is constant time work, done only once before the game starts.
 
 ## How to Compile & Run
 
